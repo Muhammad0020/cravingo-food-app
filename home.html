@@ -1,22 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Home - Cravingo ~</title>
-<link rel="stylesheet" type="text/css" href="home.css">
+  <title>Home - Cravingo ~</title>
+  <link rel="stylesheet" type="text/css" href="home.css">
+  <link href="https://fonts.googleapis.com/css2?family=Isometra&display=swap" rel="stylesheet">
 </head>
 <body>
-<nav>
-<ul>
-<img src="C:\Users\Personal\Desktop\RETRO 1.2\misc\icon.png" alt="Icon">
-  <li><a href="home.html">Home</a></li>
-  <li><a href="menu.html">Menu</a></li>
-  <li><a href="checkout.html">Checkout</a></li>
-  <li><a href="contact.html">Contact</a></li>
-</ul>
+
+<nav class="navbar">
+  <div class="logo">
+    <a href="home.html"><img src="C:\Users\Personal\Desktop\RETRO 1.2\misc\logo1.png" alt="Cravingo Logo" /></a>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#checkout">Checkout</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
 </nav>
-<h2><b>Cravingo</b></h2>
-<h3><i>Where Hunger Meets Cravings ~</i></h3>
+
+<!-- Hero Container with Glass/White Card -->
+<div class="hero-container">
+  <div class="hero-card">
+    <h2><b>Cravingo</b></h2>
+    <h3><i>~ Where Hunger Meets Cravings At Your Door Steps ~</i></h3>
+    
+    <form>
+      <input type="search" id="search-input" name="q" placeholder="Search..." required>
+      <button type="submit">Search Restaurants</button>
+    </form>
+  </div>
+</div>
+
+<div id="imagecontainer"></div>
+
+<div id="images">Our Menu</div>
+
+<footer>
+  <p>My first Website - LMSI & BD Group Project</p>
+  <p class="p1">Muhammad , Pablo , Manuel , Naiara</p>
+</footer>
 
 </body>
-
 </html>
