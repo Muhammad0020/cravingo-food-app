@@ -21,3 +21,18 @@ Material
 Ingredientes
 Proveedores
 Hacer sub entidad
+
+PÁGINA HOME: 
+- Descripción de la app
+- Info: contacto, dirección (al final)
+- Flexbox: Explicación del funcionamiento, reseñas, registrarse
+
+PÁGINA MENÚ:
+- Opciones comida
+
+PÁGINA CHEF:
+- Información personal
+
+PÁGINA RESERVA (desde menú):
+- Datos personales
+- Preferencias
