@@ -28,10 +28,13 @@ PÁGINA HOME:
 - Flexbox: Explicación del funcionamiento, reseñas, registrarse
 
 PÁGINA MENÚ:
-- Opciones comida
+- Opciones comida (4):
+  - Fotos
+  - Descripción
 
-PÁGINA CHEF:
+PÁGINA CHEF (3):
 - Información personal
+- Actuación (3)
 
 PÁGINA RESERVA (desde menú):
 - Datos personales
