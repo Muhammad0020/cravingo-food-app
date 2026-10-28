@@ -35,6 +35,7 @@ PÁGINA MENÚ:
 PÁGINA CHEF (3):
 - Información personal
 - Actuación (3)
+- Horario
 
 PÁGINA RESERVA (desde menú):
 - Datos personales
