@@ -27,19 +27,31 @@ Proveedores (cif, nombre, tlf, email, direccion)
 
 PÁGINA HOME: 
 - Descripción de la app
-- Info: contacto, dirección (al final)
-- Flexbox: Explicación del funcionamiento, reseñas, registrarse
+- Info: contacto, dirección (link al google maps) (al final)
+- Flexbox: Explicación del funcionamiento, reseñas, reservar
+- Video
 
 PÁGINA MENÚ:
 - Opciones comida (4):
   - Fotos
   - Descripción
+  - OPCIÓN SIN GLUTEN
+  - OPCIÓN VEGANA
 
 PÁGINA CHEF (3):
 - Información personal
-- Actuación (3)
-- Horario
+- Actuación (3), audio
+- Horario (tabla)
 
 PÁGINA RESERVA (desde menú):
 - Datos personales
+      - Nombre
+      - Apellido
+      - Email
+      - TlF
+      - Cocinero, Menú
+      - Dirección
+      - Fecha 
 - Preferencias
+    - Alergias
+  
