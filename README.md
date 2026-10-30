@@ -14,13 +14,16 @@ Y tu información
 
 
 Entidades
-Cocinero
-Cliente
-Reserva – la info de lo que pide
-Material
-Ingredientes
-Proveedores
-Hacer sub entidad
+Central (código, cod postal, nom ciudad)
+Cocinero (id, nombre, edad, especialidad), mentor/jefe con reflexiva
+    Actuación (duracion, vestimenta)
+Cliente (código, nombre, apellido, email, tlf)
+Menú (código, entrante, primero, segundo, postre)
+Reserva (código, fecha, dirección), relación entre cocinero, menú y cliente
+Producto (código)
+    Ingredientes (tipo)
+    Materiales (tipo)
+Proveedores (cif, nombre, tlf, email, direccion)
 
 PÁGINA HOME: 
 - Descripción de la app
