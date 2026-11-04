@@ -1,55 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Home - Cravingo ~</title>
-  <link rel="stylesheet" type="text/css" href="home.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cravingo | In-Home Live Chef Experience</title>
+  <link rel="stylesheet" href="home.css">
   <link href="https://fonts.googleapis.com/css2?family=Isometra&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<div class="audio-container">
-  <audio id="bg-audio" autoplay loop controls>
-    <source src="audio/bg.mp3" type="audio/mp3">
-    Your browser does not support the audio element.
-  </audio>
-</div>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="misc/logo1.png" alt="Cravingo Logo">
+    </div>
+    <ul class="nav-links">
+      <li><a href="home.html" class="active">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="chef.html">Our Chefs</a></li>
+      <li><a href="reservation.html">Reservation</a></li>
+    </ul>
+  </nav>
 
-<nav class="navbar">
-  <div class="logo">
-    <a href="home.html"><img src="C:\Users\Personal\Desktop\RETRO 1.2\misc\logo1.png" alt="Cravingo Logo" /></a>
-  </div>
+  <!-- Main Title Section -->
+  <header class="main-title-section">
+    <h1 class="brand-title">Cravingo</h1>
+    <p class="tagline">The Luxury In-Home Culinary Experience</p>
+    <p class="app-description">
+      We bring elite private chefs straight to your kitchen. Pick your custom multi-course menu, and our chef arrives to prepare an unforgettable live-cooking spectacle right at your home. Don't worry about kitchen equipment—we bring our own grill!
+    </p>
+    <a href="reservation.html" class="primary-btn">Book Your Chef Now</a>
+  </header>
 
-  <ul class="nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#menu">Menu</a></li>
-    <li><a href="#checkout">Checkout</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+  <!-- Features Section -->
+  <section class="features-section">
+    <div class="features-container">
 
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="misc/fast.png" alt="Speed Icon" class="card-icon">
+        <h3>Seamless Booking</h3>
+        <p>Quick reservations tailored to your exact schedule, menu preferences, and home setup.</p>
+      </div>
 
-<div class="hero-container">
-  <div class="hero-card">
-    <h2><b>Cravingo</b></h2>
-    <h3><i>~ Where Hunger Meets Cravings At Your Door Steps ~</i></h3>
-    
-    <form>
-      <input type="search" id="search-input" name="q" placeholder="Search..." required>
-      <button type="submit">Search Restaurants</button>
-    </form>
-  </div>
-</div>
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="misc/leaf.png" alt="Fresh Icon" class="card-icon">
+        <h3>Fresh & Live Cooking</h3>
+        <p>Prepared right in front of your guests using top-grade ingredients and professional gear.</p>
+      </div>
 
-<div id="imagecontainer"></div>
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="misc/offer.png" alt="Offer Icon" class="card-icon">
+        <h3>Special Menus</h3>
+        <p>Explore exclusive seasonal options, including dedicated Gluten-Free and Vegan selections.</p>
+        <a href="menu.html" class="card-btn">View Menus</a>
+      </div>
 
- <form>
-      <button type="submit">OUR MENU</button>
-    </form>
+    </div>
+  </section>
 
-<footer>
-  <p>My first Website - LMSI & BD Group Project</p>
-  <p class="p1">Muhammad , Pablo , Manuel , Naiara</p>
-</footer>
+  <!-- Video Section -->
+  <section class="video-section">
+    <div class="video-wrapper">
+      <h2>Experience The Spectacle</h2>
+      <div class="video-container">
+        <iframe 
+          width="560" 
+          height="315" 
+          src="https://www.youtube.com/embed/cu4JEKqm1GU?controls=0" 
+          title="Live Culinary Experience Promo" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+          Video not supported
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      
+      <div class="footer-column">
+        <h4 class="footer-brand">Cravingo</h4>
+        <p>Turning your home into a private fine-dining restaurant.</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Useful Links</h4>
+        <ul class="footer-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="chef.html">Our Chefs</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Contact Details</h4>
+        <p><strong>Email:</strong> info@cravingofood.com</p>
+        <p><strong>Phone:</strong> +34 600 000 000</p>
+      </div>
+
+    </div>
+
+    <hr class="footer-divider">
+
+    <div class="footer-bottom">
+      <p>© 2026 Cravingo. All rights reserved.</p>
+      <div class="audio-wrapper">
+        <audio id="bg-audio" autoplay loop controls>
+          <source src="audio/bg.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
