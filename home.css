@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Isometra&display=swap');
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
 
 * {
   box-sizing: border-box;
@@ -12,16 +16,17 @@ body {
 background: linear-gradient(20deg,rgba(255, 87, 34, 1) 0%, rgba(230, 57, 70, 1) 0%, rgba(253, 252, 245, 1) 84%, rgba(33, 37, 41, 1) 100%);
   font-family: Arial, sans-serif;
   color: #212529;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+   margin: 0;
+  padding: 0;
 }
 
 /* Navigation Bar */
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+	
   padding: 15px 60px;
   background-color: #FFFFFF;
   width: 100%;
@@ -217,6 +222,43 @@ background: linear-gradient(20deg,rgba(255, 87, 34, 1) 0%, rgba(230, 57, 70, 1) 
   border-radius: 8px;
 }
 
+/* Interactive Image Map Section */
+.imagemap-section {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  width: 100%;
+}
+
+.imagemap-wrapper h2 {
+  font-family: "Isometra", serif;
+  color: #212529;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.imagemap-subtitle {
+  font-size: 14px;
+  color: #6C757D;
+  margin-bottom: 25px;
+}
+
+.interactive-img {
+ 
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 16px;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.interactive-img:hover {
+  transform: scale(1.02);
+  filter: drop-shadow(0 8px 15px rgba(255, 87, 34, 0.2));
+}
+
+
 /* Footer */
 footer {
   width: 100%;
@@ -306,4 +348,28 @@ footer {
 
 .audio-wrapper audio {
   height: 30px;
+  
+  
+}@media (max-width: 768px) {
+  .features-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .video-container iframe {
+    width: 100%;
+    height: 220px;
+  }
+}
+
+@media (max-width: 400px) {
+  .interactive-img {
+    width: 280px;
+    height: 280px;
+  }
 }

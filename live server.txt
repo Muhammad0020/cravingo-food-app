@@ -1,0 +1,1 @@
+npx http-server -o -p 0000 -c-1
