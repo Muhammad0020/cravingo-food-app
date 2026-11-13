@@ -163,7 +163,7 @@ footer{
 	border: none;
 	height: 1px;
 	background-color: #E6DFD1;
-	margin: 3opx auto 20px auto;
+	margin: 30px auto 20px auto;
 	max-width:1100px;
 	}
 .footer-bottom{
@@ -174,6 +174,7 @@ footer{
 	align-items: center;
 	flex-wrap: wrap;
 	gap:15px;
+	margin-bottom:50px;
 	}
 .footer-bottom p{
 	font-size: 13px;
