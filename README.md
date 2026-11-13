@@ -54,4 +54,14 @@ PÁGINA RESERVA (desde menú):
       - Fecha 
 - Preferencias
     - Alergias
-  
+
+  DROPDOWN MENU
+  <li class="dropdown">
+	<a href="chef.html">Chefs</a>
+		<ul class="dropdown-content">
+			<li><a href="chef.html#PayasoInfo">The Clown</a></li>
+			<li><a href="chef.html#PrincesaInfo">Princess Brianna</a></li>
+			<li><a href="chef.html#GingerInfo">Ginger Cookie</a></li>
+			<li><a href="chef.html#SirenoInfo">The Little Mermaid</a></li>
+		</ul>
+    </li>
