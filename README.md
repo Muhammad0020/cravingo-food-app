@@ -66,6 +66,15 @@ PÁGINA RESERVA (desde menú):
 		</ul>
     </li>
 	DROPDOWN MENU CSS
+	ul {
+	list-style-type:none;
+	}
+li {
+	display:inline-block;
+	}
+a:link {
+	display:block;
+	}
 	.dropdown {
 	display:inline-block;
 	position: relative;
