@@ -55,7 +55,7 @@ PÁGINA RESERVA (desde menú):
 - Preferencias
     - Alergias
 
-  DROPDOWN MENU
+  DROPDOWN MENU HTML
   <li class="dropdown">
 	<a href="chef.html">Chefs</a>
 		<ul class="dropdown-content">
@@ -65,3 +65,39 @@ PÁGINA RESERVA (desde menú):
 			<li><a href="chef.html#SirenoInfo">The Little Mermaid</a></li>
 		</ul>
     </li>
+	DROPDOWN MENU CSS
+	.dropdown {
+	display:inline-block;
+	position: relative;
+	}
+.dropdown-content {
+	display:none;
+	position:absolute;
+	top:100%;
+	margin:0;
+	box-sizing:border-box;
+	border: 1px solid #E6DFD1;
+	border-radius: 4px;
+	background-color: #FFFFFF;
+	list-style: none;
+	padding:8px 0;
+	min-width:200px;
+	box-shadow:0 8px 20px rgba(33, 37, 41, 0.08);
+	}
+.dropdown-content a {
+	padding:10px 20px;
+	font-size: 14px;
+	white-space: nowrap;
+	color:#212529;
+	font-weight:normal;
+	}
+.dropdown-content a:hover {
+	background-color:#FFF5F2;
+	color:#FF5722;
+	}
+.dropdown-content li {
+	width:100%;
+	}
+.dropdown:hover .dropdown-content {
+	display:block;
+	}
