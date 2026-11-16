@@ -1,130 +1,207 @@
 <!DOCTYPE html>
-	<html>
+	<html lang="en">
 		<head>
+		<meta charset="UTF-8">
 			<title>reservation</title>
 			<link rel="stylesheet" href="reservation.css"/>
 		</head>
-		<header>
-			<nav class="navbar">
-			  <div class="logo">
-				<a href="home.html"><img src="./misc/logo.jpg" alt="Cravingo Logo" width=60px/></a>
-			  </div>
-
-			  <ul class="nav-links">
-				<li><a href="home.html">Home</a></li>
-				<li><a href="menu.html">Menu</a></li>
-				<li><a href="chef.html">Chef</a></li>
-				<li><a href="reservation.html">Reservation</a></li>
-			  </ul>
-			</nav>
-		</header>
+		
 		<body>
-			<form>
-				<fieldset id="client">
-					<legend>Client information:</legend>
-					<label for="first name">First Name:</label>
-					<input type="text"/>
-					<label for="last name">Last Name:</label>
-					<input type="text"/>
-					<label for="email">Email:</label>
-					<input type="email"/>
-					<label for="telephone">Telephone:</label>
-					<input type="tel"/>
-					<div>
-						<textarea rows="4" cols="50" name="longText" wrap="hard">More information we need to know?</textarea>
-					</div>
-				</fieldset>
-				<fieldset id="reservation">
-					<legend>Reservation information:</legend>
-					<label for="date">Date:</label>
-					<input type="date"/>
-					<label for="time">Time:</label>
-					<input type="time"/>
-					<label for="address">Address:</label>
-					<input type="text"/>
-					<fieldset id="radio">
-						<h5>What type of menu do you want?</h5>
-						<input type="radio" name="type" value="default" id="default" checked>
-						<label for="default">Default</label><br>
-						<input type="radio" name="type" value="vegetarian" id="vegetarian">
-						<label for="vegetarian">Vegetarian</label><br>
-						<input type="radio" name="type" value="vegan" id="vegan">
-						<label for="vegan">Vegan</label>
-					</fieldset>
-					<fieldset id="checkbox">
-						<input type="checkbox" value="celiac" id="celiac"/>
-						<label for="celiac">Celiac</label><br>
-						<input type="checkbox" value="intolerant" id="intolerant"/>
-						<label for="intolerant">Intolerant</label><br>
-					</fieldset>
-					<div>
-						<h5>Chef:</h5>
-						<select>
-							<option value="">1</option>
-							<option value="">2</option>
-							<option value="">3</option>
-						</select>
-					</div>
-					<div>
-						<h5>Performance:</h5>
-						<select>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-						</select>
-					</div>
-					<div>
-						<h5>Menu:</h5>
-						<select>
-							<option value="">1</option>
-							<option value="">2</option>
-							<option value="">3</option>
-							<option value="">4</option>
-						</select>
-					</div>
-					<div>
-						<textarea rows="4" cols="50" name="longText" wrap="hard">Do you want to change/add something?</textarea>
-					</div>
-				</fieldset>
-				<input type="submit" value="Send"/>
-			</form>
+			<header>
+				<nav class="navbar">
+				  <div class="logo">
+					<a href="home.html"><img src="./misc/logo.png" alt="Cravingo Logo"/></a>
+				  </div>
+				  <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+				  <label for="menu-toggle" class="menu-btn">☰</label>
+				  <ul class="nav-links">
+					<li><a href="home.html">Home</a></li>
+					<li><a href="menu.html">Menu</a></li>
+					<li class="dropdown">
+						<a href="chef.html">Chefs</a>
+							<ul class="dropdown-content">
+								<li><a href="chef.html#PayasoInfo">The Clown</a></li>
+								<li><a href="chef.html#PrincesaInfo">Princess Brianna</a></li>
+								<li><a href="chef.html#GingerInfo">Ginger Cookie</a></li>
+								<li><a href="chef.html#SirenoInfo">The Little Mermaid</a></li>
+							</ul>
+					</li>
+					<li><a href="reservation.html" class="active">Reservation</a></li>
+				  </ul>
+				</nav>
+			</header>
+			<div class="column">
+				<section class="images">
+					<h3>OUR CHEFS</h3>
+						<a href="chef.html"><img src="./images/Payaso.png" alt="Chef clown"/></a>
+						<a href="chef.html"><img src="./images/Princesa.png" alt="Chef princess"/></a>
+						<a href="chef.html"><img src="./images/Galleta.png" alt="Chef cookie"/></a>
+						<a href="chef.html"><img src="./images/Sireno.png" alt="Chef siren"/></a>
+				</section>
+				
+				<section class="form">
+					<h2>DO YOUR RESERVATION AND ENJOY THE SPECTACLE!</h2>
+					<details class="timetable">
+					<summary>Click here to see our timetable!</summary>
+						<table>
+							<tr>
+								<td class="time">Lunch</td>
+								<td colspan="2">12.30-14.30</td>
+								<td>13.30-15.00</td>
+								<td>14.00-15.30</td>
+							</tr>
+							<tr>
+								<td class="time">Dinner</td>
+								<td>19.30-21.00</td>
+								<td>20.00-21.30</td>
+								<td>20.30-22.00</td>
+								<td>21.00-22.30</td>
+							</tr>
+						</table>
+					</details>
+					<form>
+						<fieldset id="client">
+							<legend><h3>Client information:</h3></legend>
+							<div>
+								<label for="firstName">First Name:</label>
+								<input type="text" id="firstName"/>
+							</div>
+							<div>
+								<label for="lastName">Last Name:</label>
+								<input type="text" id="lastName"/>
+							</div>
+							<div>
+								<label for="email">Email:</label>
+								<input type="email" id="email"/>
+							</div>
+							<div>
+								<label for="telephone">Telephone:</label>
+								<input type="tel" id="telephone"/>
+							</div>
+							<div>
+								<textarea rows="6" cols="80" name="longText" wrap="hard">More information we need to know?</textarea>
+							</div>
+						</fieldset>
+						<fieldset id="reservation">
+							<legend><h3>Reservation information:</h3></legend>
+							<div>
+								<label for="date">Date:</label>
+								<input type="date" id="date"/>
+							</div>
+							<div>
+								<label for="time">Time:</label>
+								<input type="time" id="time"/>
+							</div>
+							<div> 
+								<label for="address">Address:</label>
+								<input type="text" id="address"/>
+							</div>
+							<div>	
+								<h4>Choose your menu:</h4>
+								<input type="radio" name="type" value="default" id="default" checked>
+								<label for="default">Default</label>
+								<input type="radio" name="type" value="vegetarian" id="vegetarian">
+								<label for="vegetarian">Vegetarian</label>
+								<input type="radio" name="type" value="vegan" id="vegan">
+								<label for="vegan">Vegan</label>
+							</div>
+							<div>		
+								<h4>Check if someone has any of this conditions:</h4>
+								<input type="checkbox" value="celiac" id="celiac"/>
+								<label for="celiac">Celiac</label>
+								<input type="checkbox" value="intolerant" id="intolerant"/>
+								<label for="intolerant">Intolerant</label>
+								<input type="checkbox" value="diabetic" id="diabetic"/>
+								<label for="intolerant">Diabetic</label>
+							</div>
+							<div>
+								<h4>Chef:</h4>
+								<select>
+									<option value="clown">Clown</option>
+									<option value="princess">Princess</option>
+									<option value="cookie">Cookie</option>
+									<option value="siren">Siren</option>
+								</select>
+							</div>
+							<div>
+								<h4>Performance:</h4>
+								<select>
+									<option value="silence">In silence</option>
+									<option value="conver">Conversation</option>
+									<option value="spectacle">Spectacle</option>
+								</select>
+							</div>
+							<div>
+								<h4>Menu:</h4>
+								<select>
+									<option value="Burger">Burger Menu</option>
+									<option value="Ribs">Ribs Menu</option>
+									<option value="Rice">Rice Menu</option>
+									<option value="Sushi">Sushi Menu</option>
+									<option value="Fish">Fish Menu</option>
+									<option value="Pasta">Pasta Menu</option>
+								</select>
+							</div>
+							<div>	
+								<h4>Do you want a surprise dessert? +10€</h4>
+								<input type="radio" name="dessert" value="yes" id="yes" checked>
+								<label for="yes">Yes</label>
+								<input type="radio" name="dessert" value="no" id="no">
+								<label for="no">No</label>
+							</div>
+							<div>
+								<textarea rows="6" cols="80" name="longText" wrap="hard">Do you want to change/add something?</textarea>
+							</div>
+						</fieldset>
+						<input type="button" onclick="alert('Thank you for your reservation!')" value="SEND" id="send"/>
+					</form>
+				</section>
+				
+				<section class="images">
+					<h3>OUR MENUS</h3>
+						<a href="menu.html"><img src="./images/menuBurger.jpg" alt="Menu Burger" class="chef"/></a>
+						<a href="menu.html"><img src="./images/menuRibs.jpg" alt="Menu Ribs" class="chef"/></a>
+						<a href="menu.html"><img src="./images/menuRice.jpg" alt="Menu Rice" class="chef"/></a>
+						<a href="menu.html"><img src="./images/menuShushi.jpg" alt="Menu Sushi" class="chef"/></a>
+						<a href="menu.html"><img src="./images/menuFish.jpeg" alt="Menu Fish" class="chef"/></a>
+						<a href="menu.html"><img src="./images/menuPasta.jpg" alt="Menu Pasta" class="chef"/></a>
+				</section>
+			</div>
 			<footer>
-    <div class="footer-container">
-      
-      <div class="footer-column">
-        <h4 class="footer-brand">Cravingo</h4>
-        <p>Turning your home into a private fine-dining restaurant.</p>
-      </div>
+				<div class="footer-container">
+					<div class="footer-column">
+						<h4 class="footer-brand">Cravingo</h4>
+						<p>Turning your home into a private fine-dining restaurant.</p>
+					</div>
 
-      <div class="footer-column">
-        <h4>Useful Links</h4>
-        <ul class="footer-links">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="chef.html">Our Chefs</a></li>
-          <li><a href="reservation.html">Reservation</a></li>
-        </ul>
-      </div>
+					<div class="footer-column">
+						<h4>Useful Links</h4>
+						<ul class="footer-links">
+						  <li><a href="home.html">Home</a></li>
+						  <li><a href="menu.html">Menu</a></li>
+						  <li><a href="chef.html">Our Chefs</a></li>
+						  <li><a href="reservation.html">Reservation</a></li>
+						</ul>
+					</div>
 
-      <div class="footer-column">
-        <h4>Contact Details</h4>
-        <p><strong>Email:</strong> info@cravingofood.com</p>
-        <p><strong>Phone:</strong> +34 600 000 000</p>
-      </div>
+					<div class="footer-column">
+						<h4>Contact Details</h4>
+						<p><strong>Email:</strong> info@cravingofood.com</p>
+						<p><strong>Phone:</strong> +34 600 000 000</p>
+					</div>
+				</div>
 
-    </div>
+			<hr class="footer-divider">
 
-    <hr class="footer-divider">
-
-    <div class="footer-bottom">
-      <p>© 2026 Cravingo. All rights reserved.</p>
-      <div class="audio-wrapper">
-        <audio id="bg-audio" autoplay loop controls>
-          <source src="audio/bg.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-    </div>
-  </footer>
+			<div class="footer-bottom">
+			  <p>© 2026 Cravingo. All rights reserved.</p>
+			  <div class="audio-wrapper">
+				<audio id="bg-audio" autoplay loop controls>
+				  <source src="./audio/sonican-cooking-background-music-loop-486763.mp3" type="audio/mpeg">
+				  Your browser does not support the audio element.
+				</audio>
+			  </div>
+			</div>
+		  </footer>
 		</body>
 	</html>
