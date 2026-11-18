@@ -1,20 +1,246 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>chef</title>
-		</head>
-		<body>
-			<nav class="navbar">
-			  <div class="logo">
-				<a href="home.html"><img src="C:\Users\Personal\Desktop\RETRO 1.2\misc\logo1.png" alt="Cravingo Logo" /></a>
-			  </div>
+<head>
 
-			  <ul class="nav-links">
-				<li><a href="home.html">Home</a></li>
-				<li><a href="menu.html">Menu</a></li>
-				<li><a href="chef.html">Chef</a></li>
-				<li><a href="reservation.html">Reservation</a></li>
-			  </ul>
-			</nav>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Chefs - Cravingo</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="chefStyle.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="home.html"><img src="misc/logo.jpg" alt="Cravingo Logo" /></a>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+			<li class="dropdown">
+	<a href="chef.html"class="active">Chefs</a>
+		<ul class="dropdown-content">
+			<li><a href="chef.html#PayasoInfo">The Clown</a></li>
+			<li><a href="chef.html#PrincesaInfo">Princess Brianna</a></li>
+			<li><a href="chef.html#GingerInfo">Ginger Cookie</a></li>
+			<li><a href="chef.html#SirenoInfo">The Little Mermaid</a></li>
+		</ul>
+    </li>
+            <li><a href="reservation.html">Reservation</a></li>
+        </ul>
+    </nav>
+    
+    <!-- CONTENT CHEFS -->
+    <main>
+        <h2>Our Exclusive CHEFS</h2>
+        <h3>Choose the experience that best aligns with your needs</h3>
+
+        <div class="menu-container">
+            
+            <!-- Chef 1 -->
+            <article class="menu-card">
+                <img src="Payaso.png" alt="Payaso cocina">
+                <div class="card-content">
+                    <h3>The Clown</h3>
+                    <p>The silliest clown you’ll ever meet in your life. He can’t tell the difference between a spoon and a fork.</p>
+                    <div class="tags">
+                        <span class="tag orange">Stupid</span>
+                        
+                    </div>
+                    <a href="#PayasoInfo" class="btn-reservar">More Info</a>
+                </div>
+            </article>
+
+            <!-- Chef 2 -->
+            <article class="menu-card">
+                <img src="Princesa.png" alt="Princesita">
+                <div class="card-content">
+                    <h3>Princess Brianna</h3>
+                    <p>The most beautiful princess you will ever see in your life. She won Miss Spain three years in a row.</p>
+                    <div class="tags">
+                        <span class="tag orange">Pretty Woman</span>
+                        
+                    </div>
+                    <a href="#PrincesaInfo" class="btn-reservar">More Info</a>
+                </div>
+            </article>
+
+            <!-- Chef 3 -->
+            <article class="menu-card">
+                <img src="Galleta.png" alt="Galletita">
+                <div class="card-content">
+                    <h3>The Ginger Cookie</h3>
+                    <p>He ran in the last election. He didn’t get a single vote. He has no formal education.</p>
+                    <div class="tags">
+                        <span class="tag orange">Rich</span>
+                        
+                    </div>
+                    <a href="#GingerInfo" class="btn-reservar">More Info</a>
+                </div>
+            </article>
+
+            <!-- Chef 4 -->
+            <article class="menu-card">
+                <img src="Sireno.png" alt="Sireno">
+                <div class="card-content">
+                    <h3>The Little Mermaid</h3>
+                    <p>The mermaid from the live-action *The Little Mermaid* was a real looker. She’s put on a few extra pounds.</p>
+                    <div class="tags">
+                        <span class="tag orange">Watch out, it might eat you.</span>
+                    </div>
+                    <a href="#SirenoInfo" class="btn-reservar">More Info</a>
+                </div>
+            </article>
+
+        </div>
+
+        
+        <section class="info-section">
+            
+            <!-- Payaso Info -->
+            <article class="info-card" id="PayasoInfo">
+                <img src="Payaso.png" alt="Payaso" class="info-img">
+                <div class="info-content">
+                    <h2>The Clown</h2>
+                    <p class="subtitle">Fine dining with a red nose: Expect gourmet flavors, flying flour, and absolutely zero dignity.</p>
+                    <p class="description">He’s the guy who decided that cooking dinner is way more fun than just doing it properly. Watch him try to flip a pancake while wearing a giant wig and squeaking his nose. The food is actually delicious, but the main course is definitely the chaos in the kitchen. He’ll juggle some veggies, drop a spoon on his foot, and still plate a perfect steak. Think of it as a fancy dinner party, but with more pie in the face and fewer rules. You’re here for the taste, but you’re definitely staying for the funny moments. No boring speeches here, just a chef who treats your living room like his personal circus. Bring your appetite and your sense of humor, because dinner is about to get weird.</p>
+					
+                    
+                    <div class="audio-wrapper" style="margin: 15px 0;">
+                        <audio id="bg-audio" controls>
+                            <source src="audio/payaso.mp3" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+						
+						 <h4>Chef Info:</h4>
+					<ul class="subtitle"> 
+						<li>Real name: Pedro Patito</li>
+						<li>TLF:676 767 676</li>
+						<li>email:snorlax22@hotmail.com</li>
+					</ul>
+                    <a href="reservation.html" class="btn-reservar">Reservation</a>
+                    <br><br>
+                    <a href="#" class="btn-volver">Go back ⬆️</a>
+                </div>
+				</div>
+            </article>
+
+            <!-- Princesa Info -->
+            <article class="info-card" id="PrincesaInfo">
+                <img src="Princesa.png" alt="Princesa" class="info-img">
+                <div class="info-content">
+                    <h2>Princess Brianna</h2>
+                    <p class="subtitle">Royal elegance meets high-end cooking: A menu fit for a queen, served with absolute perfection.</p>
+                    <p class="description">Princess Brianna brings a touch of royalty straight to your dining table. Forget about burnt toast or messy counters; everything she touches turns into a Michelin-star masterpiece. She treats every recipe like a crown jewel, making sure your night feels like a grand royal gala. Sit back, relax, and let royalty handle the kitchen.</p>
+					
+					<div class="audio-wrapper" style="margin: 15px 0;">
+                        <audio id="bg-audio" controls>
+                            <source src="audio/Princesa.mp3" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+					 <h4>Chef Info:</h4>
+					<ul class="subtitle"> 
+						<li>Real name: Rigoberto Martinez</li>
+						<li>TLF:600 800 500</li>
+						<li>email:rigobertothegoat@hotmail.com</li>
+					</ul>
+                   
+                    <a href="reservation.html" class="btn-reservar">Reservation</a>
+                    <br><br>
+                    <a href="#" class="btn-volver">Go back ⬆️</a>
+                </div>
+            </article>
+
+            <!-- Ginger Info -->
+            <article class="info-card" id="GingerInfo">
+                <img src="Galleta.png" alt="Galleta" class="info-img">
+                <div class="info-content">
+                    <h2>The Ginger Cookie</h2>
+                    <p class="subtitle">Sweet, slightly toasted, and completely unpredictable in the best way possible.</p>
+                    <p class="description">Don't let the innocent gingerbread look fool you. This cookie packs a serious punch in the kitchen! Even if he failed the elections and isn't big on reading books, he knows his recipes by heart. Expect sweet treats, warm cookies, and a surprisingly cozy vibe for your evening.He loves Sarandonga Cuchiviri cuchiviri song.</p>
+					<div class="audio-wrapper" style="margin: 15px 0;">
+                        <audio id="bg-audio" controls>
+                            <source src="audio/Ginger.mp3" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+					 <h4>Chef Info:</h4>
+					<ul class="subtitle"> 
+						<li>Real name: Trikinho Butland</li>
+						<li>TLF:696 969 676</li>
+						<li>email:trikinho90@hotmail.com</li>
+					</ul>
+                    
+                    <a href="reservation.html" class="btn-reservar">Reservation</a>
+                    <br><br>
+                    <a href="#" class="btn-volver">Go back ⬆️</a>
+                </div>
+            </article>
+
+            <!-- Sireno Info -->
+            <article class="info-card" id="SirenoInfo">
+                <img src="Sireno.png" alt="Sireno" class="info-img">
+                <div class="info-content">
+                    <h2>The Little Mermaid</h2>
+                    <p class="subtitle">Fresh flavors straight from the deep blue sea, prepared with a splash of chaos.</p>
+                    <p class="description">If you love seafood, this is your guy. He swims straight from the ocean into your kitchen to cook up the freshest catch of the day. He talks non-stop about fish facts and underwater adventures while prepping your dinner. It's loud, it's wet, but the seafood is unmatched.He is very good at singing.</p>
+                    <div class="audio-wrapper" style="margin: 15px 0;">
+                        <audio id="bg-audio" controls>
+                            <source src="audio/Sireno.mp3" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+					 <h4>Chef Info:</h4>
+					<ul class="subtitle"> 
+						<li>Real name: Elsa Pato</li>
+						<li>TLF:722 378 709</li>
+						<li>email:67clown@hotmail.com</li>
+					</ul>
+                    <a href="reservation.html" class="btn-reservar">Reservation</a>
+                    <br><br>
+                    <a href="#" class="btn-volver">Go back ⬆️</a>
+                </div>
+            </article>
+
+        </section>
+    </main>
+<!-- FOOTER -->
+   <footer>
+				<div class="footer-container">
+					<div class="footer-column">
+						<h4 class="footer-brand">Cravingo</h4>
+						<p>Turning your home into a private fine-dining restaurant.</p>
+					</div>
+
+					<div class="footer-column">
+						<h4>Useful Links</h4>
+						<ul class="footer-links">
+						  <li><a href="home.html">Home</a></li>
+						  <li><a href="menu.html">Menu</a></li>
+						  <li><a href="chef.html">Chefs</a></li>
+						  <li><a href="reservation.html">Reservation</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-column">
+						<h4>Contact Details</h4>
+						<p><strong>Email:</strong> info@cravingofood.com</p>
+						<p><strong>Phone:</strong> +34 600 000 000</p>
+					</div>
+				</div>
+
+			<hr class="footer-divider">
+
+			<div class="footer-bottom">
+			  <p>© 2026 Cravingo. All rights reserved.</p>
+			  <div class="audio-wrapper">
+				<audio id="bg-audio" autoplay loop controls>
+				  <source src="./audio/sonican-cooking-background-music-loop-486763.mp3" type="audio/mpeg">
+				  Your browser does not support the audio element.
+				</audio>
+			  </div>
+			</div>
+		  </footer>
 		</body>
 	</html>
