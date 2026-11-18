@@ -1,20 +1,671 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>menú</title>
-		</head>
-		<body>
-			<nav class="navbar">
-			  <div class="logo">
-				<a href="home.html"><img src="C:\Users\Personal\Desktop\RETRO 1.2\misc\logo1.png" alt="Cravingo Logo" /></a>
-			  </div>
-
-			  <ul class="nav-links">
-				<li><a href="home.html">Home</a></li>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="menu.css">
+		<link href="https://fonts.googleapis.com/css2?family=Isometra&display=swap" rel="stylesheet">
+		<title>menú</title>
+	</head>
+	<body>
+		<nav class="navbar">
+			<div class="logo">
+				<img src="misc/logo.png" alt="Cravingo Logo">
+			</div>
+			<input type="checkbox" id="menu-toggle" class="menu-checkbox">
+			<label for="menu-toggle" class="menu-btn" aria-label="Abrir menú">☰</label>
+			<ul class="nav-links">
+				<li><a href="home.html" class="active">Home</a></li>
 				<li><a href="menu.html">Menu</a></li>
-				<li><a href="chef.html">Chef</a></li>
+				<li class="dropdown">
+					<a href="chef.html">Chefs</a>
+					<ul class="dropdown-content">
+						<li><a href="chef1.html">The Clown</a></li>
+						<li><a href="chef2.html">Princess Brianna</a></li>
+						<li><a href="chef3.html">Ginger Cookie</a></li>
+						<li><a href="chef4.html">The Little Mermaid</a></li>
+					</ul>
+				</li>
 				<li><a href="reservation.html">Reservation</a></li>
-			  </ul>
-			</nav>
-		</body>
-	</html>
+			</ul>
+		</nav>
+		<div class="tarjetas">
+			<div class="tarjeta">
+				<h1 class="isometra">BURGER <span class="salto">MENU</span></h1>
+				<img src="images/menuBurger.jpg" alt="Burger">
+				<ol>
+					<li>Fries</li>
+					<li>Onion Rings</li>
+					<li>Cheeseburger</li>
+				</ol>
+				<h2 class="precio">27.20€</h2>
+				<details class="info">
+					<summary class="infoTitulo">Nutritional Info</summary>
+					<div class="infoContenido">
+						<h3>Fries</h3>
+						<table class="tablaNutricional">
+							<tr>
+								<th>Nutrient</th>
+								<th>Amount</th>
+							</tr>
+							<tr>
+								<td>Calories</td>
+								<td>465 kcal</td>
+							</tr>
+							<tr>
+								<td>Total Fat</td>
+								<td>22 g</td>
+							</tr>
+							<tr>
+								<td>Protein</td>
+								<td>5.5 g</td>
+							</tr>
+							<tr>
+								<td>Sodium</td>
+								<td>400 mg</td>
+							</tr>
+						</table>
+						<h3>Onion Rings</h3>
+						<table class="tablaNutricional">
+							<tr>
+								<th>Nutrient</th>
+								<th>Amount</th>
+							</tr>
+							<tr>
+								<td>Calories</td>
+								<td>420 kcal</td>
+							</tr>
+							<tr>
+								<td>Total Fat</td>
+								<td>21 g</td>
+							</tr>
+							<tr>
+								<td>Protein</td>
+								<td>4.8 g</td>
+							</tr>
+							<tr>
+								<td>Sodium</td>
+								<td>600 mg</td>
+							</tr>
+						</table>
+						<h3>Cheeseburger</h3>
+						<table class="tablaNutricional">
+							<tr>
+								<th>Nutrient</th>
+								<th>Amount</th>
+							</tr>
+							<tr>
+								<td>Calories</td>
+								<td>560 kcal</td>
+							</tr>
+							<tr>
+								<td>Total Fat</td>
+								<td>28 g</td>
+							</tr>
+							<tr>
+								<td>Protein</td>
+								<td>32 g</td>
+							</tr>
+							<tr>
+								<td>Sodium</td>
+								<td>950 mg</td>
+							</tr>
+						</table>
+					</div>
+				</details>
+			</div>
+			<div class="tarjeta">
+				<h1 class="isometra">RIBS <span class="salto">MENU</span></h1>
+				<img src="images/menuRibs.jpg" alt="Ribs">
+				<ol>
+					<li>Garlic bread</li>
+					<li>Potato wedges</li>
+					<li>BBQ ribs</li>
+				</ol>
+				<h2 class="precio">29.50€</h2>
+				<details class="info">
+					<summary class="infoTitulo">Nutritional Info</summary>
+					<div class="infoContenido">
+						<h3>Garlic bread</h3>
+						<table class="tablaNutricional">
+							<tr>
+								<th>Nutrient</th>
+								<th>Amount</th>
+							</tr>
+							<tr>
+								<td>Calories</td>
+								<td>350 kcal</td>
+							</tr>
+							<tr>
+								<td>Total Fat</td>
+								<td>14 g</td>
+							</tr>
+							<tr>
+								<td>Protein</td>
+								<td>8 g</td>
+							</tr>
+							<tr>
+								<td>Sodium</td>
+								<td>520 mg</td>
+							</tr>
+						</table>
+						<h3>Potato wedges</h3>
+						<table class="tablaNutricional">
+							<tr>
+								<th>Nutrient</th>
+								<th>Amount</th>
+							</tr>
+							<tr>
+								<td>Calories</td>
+								<td>290 kcal</td>
+							</tr>
+							<tr>
+								<td>Total Fat</td>
+								<td>12 g</td>
+							</tr>
+							<tr>
+								<td>Protein</td>
+								<td>4 g</td>
+							</tr>
+							<tr>
+								<td>Sodium</td>
+								<td>450 mg</td>
+							</tr>
+						</table>
+						<h3>BBQ ribs</h3>
+						<table class="tablaNutricional">
+							<tr>
+								<th>Nutrient</th>
+								<th>Amount</th>
+							</tr>
+							<tr>
+								<td>Calories</td>
+								<td>780 kcal</td>
+							</tr>
+							<tr>
+								<td>Total Fat</td>
+								<td>48 g</td>
+							</tr>
+							<tr>
+								<td>Protein</td>
+								<td>42 g</td>
+							</tr>
+							<tr>
+								<td>Sodium</td>
+								<td>1100 mg</td>
+							</tr>
+						</table>
+					</div>
+				</details>
+			</div>
+			<div class="tarjeta">
+				<h1 class="isometra">RICE <span class="salto">MENU</span></h1>
+				<img src="images/menuRice.jpg" alt="Rice">
+				<ol>
+					<li>Spring rolls</li>
+					<li>Shrimp fried rice</li>
+					<li>Chicken Satay Skewers</li>
+				</ol>
+				<h2 class="precio">22.20€</h2>
+				<details class="info">
+					<summary class="infoTitulo">Nutritional Info</summary>
+					<div class="infoContenido">
+						<h3>Spring rolls</h3>
+						<table class="tablaNutricional">
+							<tr>
+								<th>Nutrient</th>
+								<th>Amount</th>
+							</tr>
+							<tr>
+								<td>Calories</td>
+								<td>220 kcal</td>
+							</tr>
+							<tr>
+								<td>Total Fat</td>
+								<td>9 g</td>
+							</tr>
+							<tr>
+								<td>Protein</td>
+								<td>5 g</td>
+							</tr>
+							<tr>
+								<td>Sodium</td>
+								<td>380 mg</td>
+							</tr>
+						</table>
+						<h3>Shrimp fried rice</h3>
+						<table class="tablaNutricional">
+							<tr>
+								<th>Nutrient</th>
+								<th>Amount</th>
+							</tr>
+							<tr>
+								<td>Calories</td>
+								<td>520 kcal</td>
+							</tr>
+							<tr>
+								<td>Total Fat</td>
+								<td>16 g</td>
+							</tr>
+							<tr>
+								<td>Protein</td>
+								<td>22 g</td>
+							</tr>
+							<tr>
+								<td>Sodium</td>
+								<td>850 mg</td>
+							</tr>
+						</table>
+						<h3>Chicken Satay Skewers</h3>
+						<table class="tablaNutricional">
+							<tr>
+								<th>Nutrient</th>
+								<th>Amount</th>
+							</tr>
+							<tr>
+								<td>Calories</td>
+								<td>310 kcal</td>
+							</tr>
+							<tr>
+								<td>Total Fat</td>
+								<td>15 g</td>
+							</tr>
+							<tr>
+								<td>Protein</td>
+								<td>26 g</td>
+							</tr>
+							<tr>
+								<td>Sodium</td>
+								<td>590 mg</td>
+							</tr>
+						</table>
+					</div>
+				</details>
+			</div>
+			<div class="tarjeta">
+				<h1 class="isometra">SUSHI <span class="salto">MENU</span></h1>
+				<img src="images/menuShushi.jpg" alt="Sushi">
+				<ol>
+					<li>Miso Soup with Tofu</li>
+					<li>Tuna Nigiri and Salmon Roll Combo</li>
+					<li>Crispy Shrimp Tempura with Dipping Sauce</li>
+				</ol>
+				<h2 class="precio">23.50€</h2>
+				<details class="info">
+					<summary class="infoTitulo">Nutritional Info</summary>
+					<div class="infoContenido">
+						<h3>Miso Soup with Tofu</h3>
+						<table class="tablaNutricional">
+							<tr>
+								<th>Nutrient</th>
+								<th>Amount</th>
+							</tr>
+							<tr>
+								<td>Calories</td>
+								<td>85 kcal</td>
+							</tr>
+							<tr>
+								<td>Total Fat</td>
+								<td>3 g</td>
+							</tr>
+							<tr>
+								<td>Protein</td>
+								<td>6 g</td>
+							</tr>
+							<tr>
+								<td>Sodium</td>
+								<td>650 mg</td>
+							</tr>
+						</table>
+						<h3>Tuna Nigiri and Salmon Roll Combo</h3>
+						<table class="tablaNutricional">
+							<tr>
+								<th>Nutrient</th>
+								<th>Amount</th>
+							</tr>
+							<tr>
+								<td>Calories</td>
+								<td>480 kcal</td>
+							</tr>
+							<tr>
+								<td>Total Fat</td>
+								<td>10 g</td>
+							</tr>
+							<tr>
+								<td>Protein</td>
+								<td>28 g</td>
+							</tr>
+							<tr>
+								<td>Sodium</td>
+								<td>780 mg</td>
+							</tr>
+						</table>
+						<h3>Crispy Shrimp Tempura with Dipping Sauce</h3>
+						<table class="tablaNutricional">
+							<tr>
+								<th>Nutrient</th>
+								<th>Amount</th>
+							</tr>
+							<tr>
+								<td>Calories</td>
+								<td>390 kcal</td>
+							</tr>
+							<tr>
+								<td>Total Fat</td>
+								<td>18 g</td>
+							</tr>
+							<tr>
+								<td>Protein</td>
+								<td>12 g</td>
+							</tr>
+							<tr>
+								<td>Sodium</td>
+								<td>520 mg</td>
+							</tr>
+						</table>
+					</div>
+				</details>
+			</div>
+			<div class="tarjeta">
+				<h1 class="isometra">PASTA <span class="salto">MENU</span></h1>
+				<img src="images/menuPasta.jpg" alt="Pasta">
+				<ol>
+					<li>Garlic Bread with Mozzarella</li>
+					<li>Tomato Basil Soup with Croutons</li>
+					<li>Spaghetti alla carbonara</li>
+				</ol>
+				<h2 class="precio">22.30€</h2>
+				<details class="info">
+					<summary class="infoTitulo">Nutritional Info</summary>
+					<div class="infoContenido">
+						<h3>Garlic Bread with Mozzarella</h3>
+						<table class="tablaNutricional">
+							<tr>
+								<th>Nutrient</th>
+								<th>Amount</th>
+							</tr>
+							<tr>
+								<td>Calories</td>
+								<td>410 kcal</td>
+							</tr>
+							<tr>
+								<td>Total Fat</td>
+								<td>18 g</td>
+							</tr>
+							<tr>
+								<td>Protein</td>
+								<td>12 g</td>
+							</tr>
+							<tr>
+								<td>Sodium</td>
+								<td>680 mg</td>
+							</tr>
+						</table>
+						<h3>Tomato Basil Soup with Croutons</h3>
+						<table class="tablaNutricional">
+							<tr>
+								<th>Nutrient</th>
+								<th>Amount</th>
+							</tr>
+							<tr>
+								<td>Calories</td>
+								<td>240 kcal</td>
+							</tr>
+							<tr>
+								<td>Total Fat</td>
+								<td>7 g</td>
+							</tr>
+							<tr>
+								<td>Protein</td>
+								<td>4 g</td>
+							</tr>
+							<tr>
+								<td>Sodium</td>
+								<td>720 mg</td>
+							</tr>
+						</table>
+						<h3>Spaghetti alla carbonara</h3>
+						<table class="tablaNutricional">
+							<tr>
+								<th>Nutrient</th>
+								<th>Amount</th>
+							</tr>
+							<tr>
+								<td>Calories</td>
+								<td>650 kcal</td>
+							</tr>
+							<tr>
+								<td>Total Fat</td>
+								<td>32 g</td>
+							</tr>
+							<tr>
+								<td>Protein</td>
+								<td>18 g</td>
+							</tr>
+							<tr>
+								<td>Sodium</td>
+								<td>810 mg</td>
+							</tr>
+						</table>
+					</div>
+				</details>
+			</div>
+			<div class="tarjeta">
+				<h1 class="isometra">FISH <span class="salto">MENU</span></h1>
+				<img src="images/menuFish.jpeg" alt="Fish">
+				<ol>
+					<li>Calamari Rings with Tartar Sauce</li>
+					<li>Seafood Chowder</li>
+					<li>Pan-Seared Cod with Roasted Vegetables</li>
+				</ol>
+				<h2 class="precio">24.10€</h2>
+				<details class="info">
+					<summary class="infoTitulo">Nutritional Info</summary>
+					<div class="infoContenido">
+						<h3>Calamari Rings with Tartar Sauce</h3>
+						<table class="tablaNutricional">
+							<tr>
+								<th>Nutrient</th>
+								<th>Amount</th>
+							</tr>
+							<tr>
+								<td>Calories</td>
+								<td>380 kcal</td>
+							</tr>
+							<tr>
+								<td>Total Fat</td>
+								<td>20 g</td>
+							</tr>
+							<tr>
+								<td>Protein</td>
+								<td>14 g</td>
+							</tr>
+                            <tr>
+
+                                <td>Sodium</td>
+
+                                <td>610 mg</td>
+
+                            </tr>
+
+                        </table>
+
+
+                        <h3>Seafood Chowder</h3>
+
+                        <table class="tablaNutricional">
+
+                            <tr>
+
+                                <th>Nutrient</th>
+
+                                <th>Amount</th>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>Calories</td>
+
+                                <td>320 kcal</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>Total Fat</td>
+
+                                <td>15 g</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>Protein</td>
+
+                                <td>16 g</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>Sodium</td>
+
+                                <td>890 mg</td>
+
+                            </tr>
+
+                        </table>
+
+
+                        <h3>Pan-Seared Cod with Roasted Vegetables</h3>
+
+                        <table class="tablaNutricional">
+
+                            <tr>
+
+                                <th>Nutrient</th>
+
+                                <th>Amount</th>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>Calories</td>
+
+                                <td>410 kcal</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>Total Fat</td>
+
+                                <td>12 g</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>Protein</td>
+
+                                <td>38 g</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>Sodium</td>
+
+                                <td>530 mg</td>
+
+                            </tr>
+
+                        </table>
+
+                    </div>
+
+                </details>
+
+            </div>
+
+        </div>
+
+        
+
+        <footer>
+
+            <div class="footer-container">
+
+                
+
+                <div class="footer-column">
+
+                    <h4 class="footer-brand">Cravingo</h4>
+
+                    <p>Turning your home into a private fine-dining restaurant.</p>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>Useful Links</h4>
+
+                    <ul class="footer-links">
+
+                        <li><a href="home.html">Home</a></li>
+
+                        <li><a href="menu.html">Menu</a></li>
+
+                        <li><a href="chef.html">Chefs</a></li>
+
+                        <li><a href="reservation.html">Reservation</a></li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>Contact Details</h4>
+
+                    <p><strong>Email:</strong> info@cravingofood.com</p>
+
+                    <p><strong>Phone:</strong> +34 600 000 000</p>
+
+                </div>
+
+
+            </div>
+
+
+            <hr class="footer-divider">
+
+
+            <div class="footer-bottom">
+
+                <p>© 2026 Cravingo. All rights reserved.</p>
+
+                <div class="audio-wrapper">
+
+                    <audio id="bg-audio" autoplay loop controls>
+
+                        <source src="audio/sonican-cooking-background-music-loop-486763.mp3" type="audio/mpeg">
+
+                        Your browser does not support the audio element.
+
+                    </audio>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+            
+
+    </body>
+
+</html> 
